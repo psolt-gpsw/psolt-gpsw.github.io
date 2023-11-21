@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "ABCDE12345.com.example.app", "ABCDE12345.com.example.app2" ],
+             "appIDs": [ "FS7GQG3SZ3.com.gopro.LinkMe" ],
              "components": [
                {
                   "#": "no_universal_links",
@@ -10,8 +10,8 @@
                   "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
                },
                {
-                  "/": "/buy/*",
-                  "comment": "Matches any URL with a path that starts with /buy/."
+                  "/": "/app/pair",
+                  "comment": "Start the pairing flow"
                },
                {
                   "/": "/help/website/*",
@@ -24,15 +24,8 @@
                   "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
                }
              ]
-           }
+           "defaults": { "caseSensitive": false }
+		   }
        ]
-   },
-   "webcredentials": {
-      "apps": [ "ABCDE12345.com.example.app" ]
-   },
-
-
-    "appclips": {
-        "apps": ["ABCED12345.com.example.MyApp.Clip"]
-    }
+   }
 }
