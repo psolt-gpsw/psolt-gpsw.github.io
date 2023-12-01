@@ -1,16 +1,39 @@
 {
+  "webcredentials": {
+    "apps": [
+      "5R97Y7Q7FD.com.gopro.GoPro",
+      "5R97Y7Q7FD.com.gopro.GoPro-Player"
+    ]
+  },
   "applinks": {
-      "details": [
-           {
-             "appIDs": [ "5R97Y7Q7FD.com.gopro.GoPro" ],
-             "components": [
-               {
-                  "/": "/app/pair",
-                  "comment": "Start the pairing flow"
-               },
-             ],
-           "defaults": { "caseSensitive": false }
-		   }
-       ]
-   }
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "5R97Y7Q7FD.com.gopro.GoPro"
+        ],
+        "components": [
+          {
+            "/": "/app/pair",
+            "comment": "Start the pairing flow"
+          },
+          {
+            "/": "/login/auth/app/*/callback",
+            "comment": "Quik 6.7 auth callback"
+          }
+        ]
+      },
+      {
+        "appIDs": [ 
+          "5R97Y7Q7FD.com.gopro.GoPro-Player"
+        ],
+        "components": [
+          {
+            "/": "/login/auth/app/*/callback"
+          }
+        ]
+      }
+    ],
+    "defaults": { "caseSensitive": false }
+  }
 }
