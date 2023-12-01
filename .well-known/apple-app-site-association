@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "5R97Y7Q7FD.com.gopro.LinkMe" ],
+             "appIDs": [ "5R97Y7Q7FD.com.gopro.GoPro" ],
              "components": [
                {
                   "/": "/app/pair",
